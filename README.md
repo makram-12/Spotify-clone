@@ -1,6 +1,6 @@
 # Spotify Full-Stack 
 
-A simple Spotify-like stack with:
+stack with:
 - Backend REST API (Express + MongoDB + Cloudinary)
 - Admin dashboard (React + Vite + Tailwind) to manage albums and songs
 - Client app (React + Vite + Tailwind) to browse albums and play songs
