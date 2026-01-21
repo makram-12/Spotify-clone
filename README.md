@@ -1,4 +1,4 @@
-# Spotify Full-Stack Monorepo
+# Spotify Full-Stack 
 
 A simple Spotify-like stack with:
 - Backend REST API (Express + MongoDB + Cloudinary)
