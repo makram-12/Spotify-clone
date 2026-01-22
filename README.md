@@ -124,7 +124,10 @@ Song model:
 - Admin: `npm run dev`, `npm run build`, `npm run preview`
 - Client: `npm run dev`, `npm run build`, `npm run preview`
 
-## Troubleshooting
-- If Admin/Client can’t reach the API, ensure backend is on port 4000 and `.env` is configured.
-- Verify MongoDB is reachable at `MONGODB_URI`.
-- Check Cloudinary credentials if uploads fail.
+## Deployment
+
+admin link : 'https://dancing-dragon-6dd028.netlify.app/'
+
+clone link : 'https://dulcet-parfait-44fb54.netlify.app'
+
+back Link : 'https://spotify-clone-production-f3e2.up.railway.app'
