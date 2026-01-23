@@ -126,8 +126,4 @@ Song model:
 
 ## Deployment
 
-admin link : 'https://dancing-dragon-6dd028.netlify.app/'
-
 clone link : 'https://dulcet-parfait-44fb54.netlify.app'
-
-back Link : 'https://spotify-clone-production-f3e2.up.railway.app'
