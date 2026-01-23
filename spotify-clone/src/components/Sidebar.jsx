@@ -1,5 +1,5 @@
 import React from 'react'
-import {assets} from "../assets/assets"
+import { assets } from "../assets/assets"
 import { useNavigate } from 'react-router-dom'
 
 const Sidebar = () => {
@@ -7,20 +7,20 @@ const Sidebar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='w-[25%] h-full p-2 flex-col gap-2 text-white hidden lg:flex'>
-      <div className='bg-[#121212] h-[15%] rounded flex flex-col justify-around'>
+    <div className='w-full lg:w-[25%] h-auto lg:h-full p-2 flex-col gap-2 text-white flex'>
+      <div className='bg-[#121212] rounded flex flex-row lg:flex-col justify-center lg:justify-around gap-4 lg:gap-0 py-3 lg:h-[15%]'>
 
-        <div onClick={()=>navigate('/')} className='flex items-center gap-3 pl-8 cursor-pointer'>
-          <img className="w-6" src={assets.home_icon} alt="" />
-          <p className="font-bold">Home</p>
+        <div onClick={() => navigate('/')} className='flex items-center gap-3 lg:pl-8 cursor-pointer hover:opacity-75 transition-opacity'>
+          <img className="w-5 sm:w-6" src={assets.home_icon} alt="" />
+          <p className="font-bold text-sm sm:text-base">Home</p>
         </div>
 
-        <div className='flex items-center gap-3 pl-8 cursor-pointer'>
-          <img className="w-6" src={assets.search_icon} alt="" />
-          <p className="font-bold">Search</p>
-        </div>  
+        <div className='flex items-center gap-3 lg:pl-8 cursor-pointer hover:opacity-75 transition-opacity'>
+          <img className="w-5 sm:w-6" src={assets.search_icon} alt="" />
+          <p className="font-bold text-sm sm:text-base">Search</p>
+        </div>
       </div>
-      <div className='bg-[#121212] h-[85%] rounded'>
+      <div className='bg-[#121212] h-auto lg:h-[85%] rounded hidden lg:block overflow-y-auto'>
         <div className='p-4 flex items-center justify-between'>
           <div className='flex items-center gap-3'>
             <img className='w-8' src={assets.stack_icon} alt="" />

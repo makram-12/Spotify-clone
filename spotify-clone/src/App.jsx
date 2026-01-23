@@ -14,7 +14,7 @@ const App = () => {
         songsData.length !== 0
           ? <>
 
-            <div className='h-[90%] flex'>
+            <div className='h-[90%] flex flex-col lg:flex-row'>
               <Sidebar />
               <Display />
             </div>
@@ -22,7 +22,7 @@ const App = () => {
           </>
           : null
       }
-      <audio ref={audioRef} src={track?track.file:""} preload='auto'></audio>
+      <audio ref={audioRef} src={track ? track.file : ""} preload='auto'></audio>
     </div>
   )
 }
