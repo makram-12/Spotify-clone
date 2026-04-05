@@ -6,7 +6,7 @@ const connnectDB = async () => {
         console.log("connection established");
     })
 
-    await mongoose.connect(`${process.env.MONGODB_URI}/spotify`);
+    await mongoose.connect(`${process.env.MONGODB_URI}/songs`);
 
 }
 
