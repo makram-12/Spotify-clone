@@ -9,7 +9,7 @@ import ListAlbum from './pages/ListAlbum';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 
-export const url = 'https://spotify-clone-production-f3e2.up.railway.app';
+export const url = 'spotify-clone-production-65f2.up.railway.app';
 
 const App = () => {
   return (
