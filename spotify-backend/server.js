@@ -20,7 +20,16 @@ app.use(cors());
 app.use("/api/song",songRouter);
 app.use('/api/album',albumRouter);
 
+app.get('/health', (req, res) => res.status(200).json({ ok: true }));
 app.get('/',(req,res)=> res.send("API Working"));
+
+process.on('unhandledRejection', (error) => {
+	console.error('Unhandled promise rejection:', error);
+});
+
+process.on('uncaughtException', (error) => {
+	console.error('Uncaught exception:', error);
+});
 
 const startServer = async () => {
 	app.listen(port, "0.0.0.0", ()=>console.log(`Server started on ${port}`));
