@@ -9,8 +9,7 @@ import albumRouter from './src/routes/albumRoute.js';
 //app config
 const app = express();
 const port = process.env.PORT || 4000;
-connnectDB();
-connectCloudinary();
+
 
 
 //middleware
@@ -23,4 +22,20 @@ app.use('/api/album',albumRouter);
 
 app.get('/',(req,res)=> res.send("API Working"));
 
-app.listen(port, "0.0.0.0", ()=>console.log(`Server started on ${port}`));
+const startServer = async () => {
+	app.listen(port, "0.0.0.0", ()=>console.log(`Server started on ${port}`));
+
+	try {
+		await connnectDB();
+	} catch (error) {
+		console.error("Initial MongoDB connection failed:", error.message);
+	}
+
+	try {
+		await connectCloudinary();
+	} catch (error) {
+		console.error("Cloudinary configuration failed:", error.message);
+	}
+}
+
+startServer();

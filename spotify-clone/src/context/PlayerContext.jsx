@@ -9,7 +9,7 @@ const PlayerContextProvider = (props) => {
     const seekBg = useRef();
     const seekBar = useRef();
 
-    const url = 'spotify-clone-production-65f2.up.railway.app';
+    const url = 'https://spotify-clone-production-65f2.up.railway.app';
 
     const [songsData, setSongsData] = useState([]);
     const [albumsData, setAlbumsData] = useState([]);
